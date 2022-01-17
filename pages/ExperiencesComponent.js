@@ -20,7 +20,6 @@ import {motion} from 'framer-motion'
 import Cube3d from './Cube'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
-import isUndefined from 'lodash/isUndefined';
 
 const Experiences = () => {
 
@@ -30,7 +29,27 @@ const Experiences = () => {
         return (
                 
                 <React.Fragment>
+                <Script
+                  dangerouslySetInnerHTML={{
+                    __html: `var text = ["Worked with Azure DevOps, using YAML pipelines, to create Xcode simulator builds, run snapshot tests. Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.", "Created a calendar, which could have events created and added on, as a part of the CYE iPad app. Sending iOS logs to AWS Cloudwatch using AWS Soto Swift Package Manager in Xcode", "Manages the marketing, purchasing, and delivery of the apparel to consumers, Ran t-shirt campaign for Covid Relief in India: https://bit.ly/3gNMeif", "Graded students work, tutored students one-on-one, Attended weekly CS 121 lab sessions to help students"];
+                            
+                            var counter = 0;
+                            var experiencesClass = document.getElementsByClassName("changeTextExperiences")[0];
+                            
+                            setInterval(() => {
+                                    experiencesClass.classList.add('hideExperiences');
+                                setTimeout(function (event) {
+                                    experiencesClass.innerHTML = text[counter];
+                                    experiencesClass.classList.remove('hideExperiences');
+                                    counter++;
+                                    if (counter >= text.length) {
+                                        counter = 0;
+                                    }
+                                }, 500);
 
+                            }, 2500);`,
+        }}
+      />
                 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                 
@@ -38,7 +57,7 @@ const Experiences = () => {
                   <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                 
                 <Grid item xs={4} sm={2} md={2} lg={2}>
-                <motion.div className = "hideExperiencesPhone" whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}><h1>Experiences</h1></motion.div>
+                <motion.div className = "hideExperiencesPhone" whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}><h1 style={{color: 'mediumpurple'}}>Experiences</h1></motion.div>
                 </Grid>
                 <Grid item xs={4} sm={6} md={4} lg={5}>
                 <div className="hideCubePhone"><Cube3d/></div>
