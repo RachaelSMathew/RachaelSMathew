@@ -1,3 +1,11 @@
+.talk {
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-radius: 8px;
+}
+
 .bottomPadding {
     margin-bottom: 50px;
 }
@@ -422,6 +430,7 @@ label { margin-right: 10px; }
 .downloadIcon {
     content: url(./images/downloadIcon.png);
     width:46px;
+    cursor: pointer;
     height:46px;
     margin-right: 10.5px;
     margin-top: 10.5px;

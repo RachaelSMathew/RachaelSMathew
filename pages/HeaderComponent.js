@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import { useRouter } from 'next/router'
+import Links from 'next/link'
+import Voice from './VoiceComponent'
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -93,9 +95,7 @@ export default function Header({ allPostsData }) {
           <React.Fragment>
               <nav>
               <ul className="nav-links">
-                  <li><a href="https://www.google.com">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Projects</a></li>
+                  <li><Voice/></li>
               </ul>
               </nav>
               
@@ -114,7 +114,11 @@ export default function Header({ allPostsData }) {
 
                }}
            >
-          </i> <a href="../Rachael Mathew_Resume 2022.pdf" download="Rachael's Resume"><img className="downloadIcon"/></a></div>
+          </i>
+            <Links href="https://docs.google.com/document/d/1fFVGajYntOaqsGKChvqbJ0vcTptNGk5hlVAgxbm6_SE/edit?usp=sharing" download="Rachael's Resume">
+            <img className="downloadIcon"/>
+            </Links>
+            </div>
 
               <ThemeProvider theme={theme}>
                 <Typography variant="h5" align="center"><div className="mainFont" ><h1>Rachael Mathew is a <span

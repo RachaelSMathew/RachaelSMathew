@@ -32,7 +32,7 @@ function About() {
             
             <div className="separator">
             <div className="line"></div>
-            <h1>About</h1>
+            <h1 style={{color: 'mediumpurple'}}>About</h1>
             <div className="line"></div>
             </div>
             
