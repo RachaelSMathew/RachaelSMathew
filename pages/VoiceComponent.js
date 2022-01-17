@@ -22,6 +22,7 @@ function Voice() {
             <Script
               dangerouslySetInnerHTML={{
                 __html: `
+        var buttonTalk = document.getElementsByClassName('talk')[0];
                     var contentTalk = document.getElementsByClassName('contentTalk')[0];
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
                     var SpeechRecognitionTalk = window.SpeechRecognitionTalk || window.webkitSpeechRecognition;
@@ -30,8 +31,11 @@ function Voice() {
                     console.log("voice is activiated");
                     contentTalk.innerHTML = "";
                     answerTalk.innerHTML = "";
+                    buttonTalk.style.background = "grey";
+                    
                 };
                 recognitionTalk.onresult = function(event) {
+                    buttonTalk.style.background = "white";
                     const current = event.resultIndex;
                     const transcript = event.results[current][0].transcript;
                     contentTalk.innerHTML = transcript;
@@ -42,6 +46,13 @@ function Voice() {
                             answerTalk.innerHTML = "She is 21 years old, but doesn't drink :)";
                         },5000);
                     }
+        if(transcript.includes("who is Rachel")) {
+            setTimeout(function(){
+                answerTalk.style.color = "black";
+                answerTalk.innerHTML = "An idiot, who's trying her best to code and survive";
+            },5000);
+        }
+        
         if(transcript.includes("how tall is Rachel")) {
         setTimeout(function(){
             answerTalk.style.color = "black";
