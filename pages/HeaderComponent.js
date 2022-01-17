@@ -8,6 +8,7 @@ import { Typography, ThemeProvider } from '@mui/material';
 import { useRouter } from 'next/router'
 import Links from 'next/link'
 import Voice from './VoiceComponent'
+import Script from 'next/script'
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -22,6 +23,7 @@ function setHidden() {
 };
 
 export default function Header({ allPostsData }) {
+    
     const [_document, set_document] = React.useState(null)
 
 
@@ -93,6 +95,25 @@ export default function Header({ allPostsData }) {
 
     return (
           <React.Fragment>
+            <Script
+              dangerouslySetInnerHTML={{
+                __html: `
+        function myFunction(x) {
+          if (x.matches) { // If media query matches
+        document.getElementsByClassName("txt-rotate")[0].style.display = "none"
+
+          } else {
+        document.getElementsByClassName("txt-rotate")[0].style.display = "inline"
+
+          }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        `,
+    }}
+  />
               <nav>
               <ul className="nav-links">
                   <li><Voice/></li>
@@ -122,7 +143,8 @@ export default function Header({ allPostsData }) {
 
               <ThemeProvider theme={theme}>
                 <Typography variant="h5" align="center"><div className="mainFont" ><h1>Rachael Mathew is a <span
-                 className="txt-rotate"
+                id="text-rotate-id"
+                className="txt-rotate"
                  data-period="2000"
                  data-rotate='[ "coder.", "writer.", "singer.", "chai enthusiast.", "person." ]'></span>
             </h1></div> </Typography>
@@ -134,7 +156,6 @@ export default function Header({ allPostsData }) {
               </ThemeProvider>
               
               <div className="hide"></div>
-
           </React.Fragment>
        
       
