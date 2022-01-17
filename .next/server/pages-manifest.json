@@ -1,13 +1,6 @@
 {
-  "/AboutComponent": "pages/AboutComponent.html",
-  "/Cube": "pages/Cube.html",
-  "/ExperiencesComponent": "pages/ExperiencesComponent.html",
-  "/FooterComponent": "pages/FooterComponent.html",
-  "/HeaderComponent": "pages/HeaderComponent.html",
-  "/SkillsComponent": "pages/SkillsComponent.html",
   "/_app": "pages/_app.js",
-  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
