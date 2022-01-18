@@ -39,10 +39,12 @@ function Voice() {
                     contentTalk.innerHTML = "";
                     answerTalk.innerHTML = "";
                     buttonTalk.style.background = "grey";
+                    document.body.style.pointerEvents = "none";
                     
                 };
                 recognitionTalk.onresult = function(event) {
                     blinkingRecord.style.display = "none";
+                    document.body.style.pointerEvents = "auto";
                     buttonTalk.style.display = "inline-block";
                     buttonTalk.style.background = "white";
                     const current = event.resultIndex;
