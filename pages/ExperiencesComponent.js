@@ -61,16 +61,18 @@ const Experiences = () => {
                                     }
                                 }, 500);
 
-                            }, 2500);
+                            }, 5000);
             setInterval(() => {
                 if(window.innerWidth >= "600") {
                     cube.style.display = "inline"
                     experiencesClass.style.display = "flex"
                     toggle.style.display = "none"
+         
                     
                 }
                 if(window.innerWidth < "600") {
                 toggle.style.display = "flex"
+     
                     if(showCube.checked) {
                         cube.style.display = "inline"
                         experiencesClass.style.display = "none"
@@ -87,7 +89,12 @@ const Experiences = () => {
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
+                <div className="separator">
+                <div className="line"></div>
                 <h1 className="ExperiencesTitleStyle">Experiences</h1>
+                <div className="line"></div>
+                </div>
+                
                 </motion.div>
                 
                 <div class="radio-list">
