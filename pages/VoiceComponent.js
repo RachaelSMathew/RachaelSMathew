@@ -60,21 +60,21 @@ function Voice() {
         if(transcript.includes("who is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
-                answerTalk.innerHTML = "An idiot, who's trying her best to code and survive";
+                answerTalk.innerHTML = "An ambitious girl who's trying her best at life and happiness";
             },1000);
         }
         
         if(transcript.includes("how tall is Rachel")) {
         setTimeout(function(){
             answerTalk.style.color = "black";
-            answerTalk.innerHTML = "She's 7'12 don't ask again.";
+            answerTalk.innerHTML = "She's 7'12";
 
         },1000);
         }
         if(transcript.includes("how is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
-                answerTalk.innerHTML = "Terrible now that you're here.";
+                answerTalk.innerHTML = "Amazing now that you're here!";
             },1000);
         }
                 };
