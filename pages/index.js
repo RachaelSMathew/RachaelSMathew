@@ -19,9 +19,7 @@ export default function Home() {
             <div className="clouds"></div>
             <Header/>
             <About/>
-            <div className="ExperiencesStyles">
             <Experiences/>
-            </div>
             <Skills/>
             <div className="bottomPadding"></div>
             <Footer/>

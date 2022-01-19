@@ -13,6 +13,9 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Script from 'next/script'
 import {motion} from 'framer-motion'
+import Image from 'next/image'
+import blinkingRec from '../images/recordingButton.gif';
+
 function Voice() {
     
     //add the listener to the btn
@@ -22,19 +25,27 @@ function Voice() {
             <Script
               dangerouslySetInnerHTML={{
                 __html: `
-        var buttonTalk = document.getElementsByClassName('talk')[0];
+                    var blinkingRecord = document.getElementsByClassName('blinkingRecord')[0];
+                    blinkingRecord.style.display = "none";
+                    var buttonTalk = document.getElementsByClassName('talk')[0];
                     var contentTalk = document.getElementsByClassName('contentTalk')[0];
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
                     var SpeechRecognitionTalk = window.SpeechRecognitionTalk || window.webkitSpeechRecognition;
-        var recognitionTalk = new SpeechRecognitionTalk();
+                    var recognitionTalk = new SpeechRecognitionTalk();
         recognitionTalk.onstart = function () {
+        blinkingRecord.style.display = "inline-block";
+        buttonTalk.style.display = "none";
                     console.log("voice is activiated");
                     contentTalk.innerHTML = "";
                     answerTalk.innerHTML = "";
                     buttonTalk.style.background = "grey";
+                    document.body.style.pointerEvents = "none";
                     
                 };
                 recognitionTalk.onresult = function(event) {
+                    blinkingRecord.style.display = "none";
+                    document.body.style.pointerEvents = "auto";
+                    buttonTalk.style.display = "inline-block";
                     buttonTalk.style.background = "white";
                     const current = event.resultIndex;
                     const transcript = event.results[current][0].transcript;
@@ -44,13 +55,13 @@ function Voice() {
                         setTimeout(function(){
                             answerTalk.style.color = "black";
                             answerTalk.innerHTML = "She is 21 years old, but doesn't drink :)";
-                        },5000);
+                        },1000);
                     }
         if(transcript.includes("who is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
                 answerTalk.innerHTML = "An idiot, who's trying her best to code and survive";
-            },5000);
+            },1000);
         }
         
         if(transcript.includes("how tall is Rachel")) {
@@ -58,23 +69,29 @@ function Voice() {
             answerTalk.style.color = "black";
             answerTalk.innerHTML = "She's 7'12 don't ask again.";
 
-        },5000);
+        },1000);
         }
         if(transcript.includes("how is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
                 answerTalk.innerHTML = "Terrible now that you're here.";
-            },5000);
+            },1000);
         }
                 };
 
                 `,
     }}
   />
-            
+
             <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1>Press Me to Ask a Question About Rachael</h1></motion.button>
+            <div className="blinkingRecord">
+            <Image src={blinkingRec}  width={100}
+            height={75}/>
+          
+            </div>
             <div className="contentTalk"></div>
             <div className="answerTalk"></div>
+            
             </div>
     )
 }
