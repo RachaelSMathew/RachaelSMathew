@@ -78,19 +78,30 @@ function Voice() {
             },1000);
         }
                 };
+                
+                var textVoice = ["Press to ask Rachael a Question", "How tall is Rachael", "How is Rachael", "Who is Rachael"];
+        var counterVoice = 0;
+        var voiceText = document.getElementsByClassName("changeVoiceText")[0];
+        setInterval(() =>{
+        voiceText.innerHTML = textVoice[counterVoice];
+        counterVoice++;
+          if (counterVoice >= textVoice.length) {
+            counterVoice = 0;
+          }
+        }, 3000);
 
                 `,
     }}
   />
 
-            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1>Press Me to Ask a Question About Rachael</h1></motion.button>
+            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1 className="changeVoiceText"></h1></motion.button>
             <div className="blinkingRecord">
             <Image src={blinkingRec}  width={100}
             height={75}/>
           
             </div>
-            <div className="contentTalk"></div>
-            <div className="answerTalk"></div>
+            <h1 className="contentTalk"></h1>
+            <h1 className="answerTalk"></h1>
             
             </div>
     )
