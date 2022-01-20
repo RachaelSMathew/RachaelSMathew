@@ -77,6 +77,12 @@ function Voice() {
                 answerTalk.innerHTML = "Amazing now that you're here!";
             },1000);
         }
+        else {
+            setTimeout(function(){
+                answerTalk.style.color = "black";
+                answerTalk.innerHTML = "Oops we don't have an answer for that yet!";
+            },1000);
+        }
                 };
                 
                 var textVoice = ["Press to ask Rachael a Question", "How tall is Rachael", "How is Rachael", "Who is Rachael"];
@@ -94,7 +100,7 @@ function Voice() {
     }}
   />
 
-            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1 className="changeVoiceText"></h1></motion.button>
+            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1 className="changeVoiceText">Press to ask Rachael a Question</h1></motion.button>
             <div className="blinkingRecord">
             <Image src={blinkingRec}  width={100}
             height={75}/>
