@@ -44,7 +44,9 @@
     display: flex;
     align-items: center;
 }
-
+.radio__toggle:before {
+    background-color: white;
+}
 .radio__toggle::after {
     content: "";
     position: absolute;
