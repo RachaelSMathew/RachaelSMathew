@@ -84,23 +84,27 @@ function Voice() {
             },1000);
         }
                 };
-                
-                var textVoice = ["Press to ask Rachael a Question", "How tall is Rachael", "How is Rachael", "Who is Rachael"];
+                            
+        var textVoice = ["Press to ask Rachael a Question", "How tall is Rachael", "How is Rachael", "Who is Rachael"];
         var counterVoice = 0;
         var voiceText = document.getElementsByClassName("changeVoiceText")[0];
-        setInterval(() =>{
-        voiceText.innerHTML = textVoice[counterVoice];
-        counterVoice++;
-          if (counterVoice >= textVoice.length) {
-            counterVoice = 0;
-          }
+        setInterval(() => {
+            voiceText.classList.add('hideExperiences');
+            setTimeout(function (event) {
+                voiceText.innerHTML = textVoice[counterVoice];
+                voiceText.classList.remove('hideExperiences');
+                counterVoice++;
+                if (counterVoice >= textVoice.length) {
+                  counterVoice = 0;
+                }
+              }, 500);
         }, 3000);
 
                 `,
     }}
   />
 
-            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1 className="changeVoiceText">Press to ask Rachael a Question</h1></motion.button>
+            <motion.button className="talk" onClick={() => recognitionTalk.start()} whileHover={{scale:1.1,boxShadow: "0px 0px 8px rgb(75,0,130)",}}><h1 className="changeVoiceText"></h1></motion.button>
             <div className="blinkingRecord">
             <Image src={blinkingRec}  width={100}
             height={75}/>
