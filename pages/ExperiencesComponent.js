@@ -99,7 +99,7 @@ const Experiences = () => {
                 
                 <div class="radio-list">
                   <label class="radio" for="radio__toggle2">
-                <input class="radio__toggle" id="radio__toggle2" type="checkbox" onClick={onClickToggleCube} checked/>
+                <input class="radio__toggle" id="radio__toggle2" type="checkbox" onClick={onClickToggleCube}/>
                     <span class="radio__span">
                       Show Cube
                     </span>
