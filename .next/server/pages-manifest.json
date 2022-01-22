@@ -1,6 +1,16 @@
 {
+  "/AboutComponent": "pages/AboutComponent.html",
+  "/Cube": "pages/Cube.html",
+  "/CubeThree": "pages/CubeThree.html",
+  "/ExperiencesComponent": "pages/ExperiencesComponent.html",
+  "/FooterComponent": "pages/FooterComponent.html",
+  "/HeaderComponent": "pages/HeaderComponent.html",
+  "/SkillsComponent": "pages/SkillsComponent.html",
+  "/VoiceComponent": "pages/VoiceComponent.html",
   "/_app": "pages/_app.js",
+  "/fetchData": "pages/fetchData.html",
+  "/": "pages/index.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
