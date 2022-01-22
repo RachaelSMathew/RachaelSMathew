@@ -24,12 +24,10 @@ import Image from 'next/image'
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-function About() {
-    
+function About({data}) {
 
     return (
             <React.Fragment>
-            
             <div className="separator">
             <div className="line"></div>
             <h1 style={{color: 'mediumpurple'}}>About</h1>
@@ -72,8 +70,8 @@ function About() {
             
             </Grid>
             <Grid item xs={4} sm={8} md={4}>
-            <Image src={myPic}  width={258} className="zIndexmyPic"
-            height={274}/>
+            <Image src={myPic}  width={data[0].width} className="zIndexmyPic"
+            height={data[0].width}/>
 
             </Grid>
             
