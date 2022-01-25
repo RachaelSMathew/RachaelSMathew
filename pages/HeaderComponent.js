@@ -136,9 +136,9 @@ export default function Header({ allPostsData }) {
                }}
            >
           </i>
-            <Links href="https://docs.google.com/document/d/1fFVGajYntOaqsGKChvqbJ0vcTptNGk5hlVAgxbm6_SE/edit?usp=sharing" download="Rachael's Resume">
-            <img className="downloadIcon"/>
-            </Links>
+            <a download="Rachael's Resume" href="/Resume.pdf">
+                <img className="downloadIcon"/>
+            </a>
             </div>
 
               <ThemeProvider theme={theme}>
