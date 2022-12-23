@@ -136,7 +136,7 @@ export default function Header({ allPostsData }) {
                }}
            >
           </i>
-            <a download="Rachael's Resume" href="/Rachael_Mathew_Resume.pdf">
+            <a download="Rachael's Resume" href="/Rachael_Mathew_Resume_2022.pdf">
                 <img className="downloadIcon"/>
             </a>
             </div>
