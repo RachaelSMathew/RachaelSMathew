@@ -88,14 +88,13 @@ const Experiences = () => {
                 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                
-                <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
+
                 <div className="separator">
                 <div className="line"></div>
                 <h1 className="ExperiencesTitleStyle">Experiences</h1>
                 <div className="line"></div>
                 </div>
                 
-                </motion.div>
                 
                 <div class="radio-list">
                   <label class="radio" htmlFor="radio__toggle2">
