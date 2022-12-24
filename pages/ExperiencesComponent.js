@@ -63,14 +63,14 @@ const Experiences = () => {
 
                             }, 5000);
             setInterval(() => {
-                if(window.innerWidth >= "600") {
+                if(window.innerWidth >= "800") {
                     cube.style.display = "inline"
                     experiencesClass.style.display = "flex"
                     toggle.style.display = "none"
          
                     
                 }
-                if(window.innerWidth < "600") {
+                if(window.innerWidth < "800") {
                 toggle.style.display = "flex"
      
                     if(showCube.checked) {
