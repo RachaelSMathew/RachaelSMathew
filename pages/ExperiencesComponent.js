@@ -71,7 +71,7 @@ const Experiences = () => {
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                 <Grid item xs={4} sm={8} md={10} lg={14}>
                 <ThemeProvider theme={theme}>
-                <Typography variant="h4" align="left" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
+                <Typography variant="h4" align="center" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
                 </Typography>
                 </ThemeProvider>
                 </Grid>
