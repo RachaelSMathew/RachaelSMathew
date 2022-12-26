@@ -32,7 +32,7 @@ const Experiences = () => {
                 <Script
                   dangerouslySetInnerHTML={{
                     __html: `var text = ["Created automated Jenkins pipelines using EC2 instances and executed tasks in a Docker container using an ECR image", "Worked with Azure DevOps, using YAML pipelines, to create Xcode simulator builds, run snapshot tests. Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.", "Created a calendar, which could have events created and added on, as a part of the CYE iPad app. Sending iOS logs to AWS Cloudwatch using AWS Soto Swift Package Manager in Xcode", "Graded students work, tutored students one-on-one, Attended weekly CS 121 lab sessions to help students"];
-                            var companyName = ["iRobot", Nuance", "Center for Youth Engagement", "Undergraduate Course Assistant"];
+                            var companyName = ["iRobot", "Nuance", "Center for Youth Engagement", "Undergraduate Course Assistant"];
                             var counter = 0;
                             var experiencesClass = document.getElementsByClassName("changeTextExperiences")[0];
 			    var companiesClass = document.getElementsByClassName("changeTextCompany")[0];
