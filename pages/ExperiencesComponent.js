@@ -1,11 +1,10 @@
 //
-//  MainComponent.h
+//  ExperiencesComponent.h
 //  
 //
 //  Created by Rachael Mathew on 12/25/21.
 //
 
-//single page: header and footer say consistant for all pages and middle part changes
 import React from 'react'
 import Script from 'next/script'
 
@@ -33,18 +32,21 @@ const Experiences = () => {
                 <Script
                   dangerouslySetInnerHTML={{
                     __html: `var text = ["Worked with Azure DevOps, using YAML pipelines, to create Xcode simulator builds, run snapshot tests. Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.", "Created a calendar, which could have events created and added on, as a part of the CYE iPad app. Sending iOS logs to AWS Cloudwatch using AWS Soto Swift Package Manager in Xcode", "Graded students work, tutored students one-on-one, Attended weekly CS 121 lab sessions to help students"];
-            
-                            var showCube = document.getElementsByClassName("radio__toggle")[0];
-                            var toggle = document.getElementsByClassName("radio-list")[0];
-                            var cube = document.getElementsByClassName("hideCubePhone")[0];
+                            var companyName = ["Nuance", "Center for Youth Engagement", "Undergraduate Course Assistant"];
                             var counter = 0;
                             var experiencesClass = document.getElementsByClassName("changeTextExperiences")[0];
+			                var companiesClass = document.getElementsByClassName("changeTextCompany")[0];
                             
                             setInterval(() => {
                                     experiencesClass.classList.add('hideExperiences');
+                                    companiesClass.classList.add('hideExperiences');
                                 setTimeout(function (event) {
                                     experiencesClass.innerHTML = text[counter];
                                     experiencesClass.classList.remove('hideExperiences');
+				                    
+                                    companiesClass.innerHTML = text[counter];
+                                    companiesClass.classList.remove('hideExperiences');
+                                    
                                     counter++;
                                     if (counter >= text.length) {
                                         counter = 0;
@@ -66,12 +68,17 @@ const Experiences = () => {
                 </div>
                 
                 
-
                 <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 10, lg: 14}}>
-                <Grid item xs={4} sm={8} md={10} lg={14}>
+                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+                <Grid item xs={4} sm={4} md={6} lg={8}>
                 <ThemeProvider theme={theme}>
-                <Typography variant="h4" align="center" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
+                <Typography variant="h2" align="right" sx={{ fontWeight: 'bold' }}><div className="changeTextCompany"></div>
+                </Typography>
+                </ThemeProvider>
+                </Grid>
+                <Grid item xs={4} sm={4} md={6} lg={8}>
+                <ThemeProvider theme={theme}>
+                <Typography variant="h4" align="left" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
                 </Typography>
                 </ThemeProvider>
                 </Grid>
@@ -85,7 +92,3 @@ const Experiences = () => {
 }
 
 export default Experiences;
-
-
-
-
