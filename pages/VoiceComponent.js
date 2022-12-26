@@ -30,14 +30,11 @@ function Voice() {
                         var voiceText = document.getElementsByClassName("changeVoiceText")[0];
                         setInterval(() => {
                                 voiceText.innerHTML = textVoice[counterVoice];
-                                if(blinkingRecord.style.display == "none") {
-                                    counterVoice++;
-                                }
+                                counterVoice++;
                                 if (counterVoice >= textVoice.length) {
                                   counterVoice = 0;
                                 }
-
-                    }, 3000);
+                        }, 3000);
         
                     var blinkingRecord = document.getElementsByClassName('blinkingRecord')[0];
                     blinkingRecord.style.display = "none";
@@ -46,16 +43,16 @@ function Voice() {
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
                     var SpeechRecognitionTalk = window.SpeechRecognitionTalk || window.webkitSpeechRecognition;
                     var recognitionTalk = new SpeechRecognitionTalk();
-                    recognitionTalk.onstart = function () {
-                        blinkingRecord.style.display = "inline-block";
-                        buttonTalk.style.display = "none";
-                        console.log("voice is activiated");
-                        contentTalk.innerHTML = "";
-                        answerTalk.innerHTML = "";
-                        buttonTalk.style.background = "grey";
-                        document.body.style.pointerEvents = "none";
+        recognitionTalk.onstart = function () {
+        blinkingRecord.style.display = "inline-block";
+        buttonTalk.style.display = "none";
+                    console.log("voice is activiated");
+                    contentTalk.innerHTML = "";
+                    answerTalk.innerHTML = "";
+                    buttonTalk.style.background = "grey";
+                    document.body.style.pointerEvents = "none";
                     
-                    };
+                };
                 recognitionTalk.onresult = function(event) {
                     blinkingRecord.style.display = "none";
                     document.body.style.pointerEvents = "auto";
@@ -77,12 +74,10 @@ function Voice() {
                             answerTalk.innerHTML = "An ambitious girl who's trying her best at life and happiness";
                         },1000);
                     }
-
                     else if(transcript.includes("how tall is Rachel")) {
                         setTimeout(function(){
                             answerTalk.style.color = "black";
                             answerTalk.innerHTML = "She's 7'12";
-
                         },1000);
                     }
                     else if(transcript.includes("how is Rachel")) {
@@ -98,7 +93,6 @@ function Voice() {
                         },1000);
                     }
                 };
-
                 `,
     }}
   />
