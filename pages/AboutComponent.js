@@ -15,7 +15,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion';
-import myPic from '../images/img.png';
+import myPic from '../images/gifImage.gif';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import Image from 'next/image'
@@ -69,17 +69,7 @@ function About() {
             
             </Grid>
             <Grid item xs={4} style={{backgroundSize: '50%', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
-                <motion.div
-                    drag
-                    dragConstraints={{
-                      top: -50,
-                      left: -50,
-                      right: 50,
-                      bottom: 50,
-                    }}
-                  >
-                    <Image src={myPic} className="zIndexmyPic"/>
-                </motion.div>
+                <Image src={myPic} className="zIndexmyPic"/>
             </Grid>
             
                
