@@ -68,7 +68,7 @@ const Experiences = () => {
                 </div>
                 
                 
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1 }} display="flex" justifyContent="center" alignItems="center">
                 <Grid container alignItems="center" justifyContent="center" wrap="nowrap" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                 <Grid item zeroMinWidth xs={0} sm={3} md={3} lg={3}>
                 <ThemeProvider theme={theme}>
