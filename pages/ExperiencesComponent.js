@@ -78,7 +78,7 @@ const Experiences = () => {
                 </Grid>
                 <Grid item zeroMinWidth xs={4} sm={5} md={9} lg={13}>
                 <ThemeProvider theme={theme}>
-                <Typography style={{overflowWrap: 'break-word'}} align="left" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
+                <Typography style={{overflowWrap: 'break-word'}} sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
                 </Typography>
                 </ThemeProvider>
                 </Grid>
