@@ -78,7 +78,7 @@ function About() {
                       right: 50,
                       bottom: 50,
                     }}
-                 />
+                 >
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
             </Grid>
