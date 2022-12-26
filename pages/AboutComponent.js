@@ -45,7 +45,6 @@ function About() {
             }}
             />
             
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5,duration:1.5}}>
 
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
@@ -70,7 +69,7 @@ function About() {
             
             </Grid>
             <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
-                <motion.div whileFocus={{ scale: 1.2 }} drag="x" dragConstraints={{ left: 300, right: 300 }}>
+                <motion.div whileFocus={{ scale: 1.2 }} drag dragConstraints={{top: -50, left: -50, right: 50, bottom: 50}}>
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
             </Grid>
@@ -80,7 +79,6 @@ function About() {
             </Box>
             
             
-            </motion.div>
             
             
             </React.Fragment>
