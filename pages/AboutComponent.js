@@ -37,7 +37,7 @@ function About() {
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
                
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
-        aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 3;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean lovesTaylorSwift = true;<br>}"
+        aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 4;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean lovesTaylorSwift = true;<br>}"
 
                    
                 
@@ -61,7 +61,7 @@ function About() {
             <ThemeProvider theme={theme}>
             <Typography variant="h4">
             <div className="AboutMe" contentEditable="true" suppressContentEditableWarning={true}>
-            "Hi, I'm Rachael. Welcome to my site! I'm a third year CS Student at UMass Amherst. I love advancing my skills in mobile and web devlopment and write and listen to T-Swift in my free time!"
+            "Hi, I'm Rachael. Welcome to my site that I created using Vercel and React! I'm a CS Student at UMass Amherst. I love advancing my skills in mobile and web devlopment and write and listen to T-Swift in my free time!"
             </div>
             </Typography>
             </ThemeProvider>
