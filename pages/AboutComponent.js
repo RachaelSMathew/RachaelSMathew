@@ -70,15 +70,9 @@ function About() {
             </Grid>
             <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
                 <motion.div
-                    whileFocus={{ scale: 1.2 }}
-                    drag
-                    dragConstraints={{
-                      top: -50,
-                      left: -50,
-                      right: 50,
-                      bottom: 50,
-                    }}
-                 >
+                    animate={{ x: 100 }}
+                    transition={{ type: "spring", stiffness: 100 }}
+                 > 
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
             </Grid>
