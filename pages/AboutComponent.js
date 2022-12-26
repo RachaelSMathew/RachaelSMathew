@@ -10,7 +10,6 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
 import Script from 'next/script'
-import {motion} from 'framer-motion'
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -71,7 +70,7 @@ function About() {
             
             </Grid>
             <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
-                <motion.div drag="x" dragConstraints={{ left: 300, right: 300 }} />
+                <motion.div whileFocus={{ scale: 1.2 }} drag="x" dragConstraints={{ left: 300, right: 300 }} />
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
             </Grid>
