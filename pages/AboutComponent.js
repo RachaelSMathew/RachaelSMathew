@@ -70,7 +70,11 @@ function About() {
             </Grid>
             <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
                 <motion.div
-                    transition={{ type: "spring", stiffness: 100 }}
+                    animate={{
+                      scale: [1, 2, 2, 1, 1],
+                      rotate: [0, 0, 270, 270, 0],
+                      borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                    }}
                  > 
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
