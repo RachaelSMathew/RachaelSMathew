@@ -30,7 +30,7 @@ function Voice() {
                         var voiceText = document.getElementsByClassName("changeVoiceText")[0];
                         setInterval(() => {
                                 voiceText.innerHTML = textVoice[counterVoice];
-                                if(blinkingRecord.style.display == "none") {
+                                if(blinkingRecord.style.display == "none" && buttonTalk.style.display == "inline-block") {
                                     counterVoice++;
                                 }
                                 if (counterVoice >= textVoice.length) {
