@@ -35,7 +35,7 @@ const Experiences = () => {
                             var companyName = ["Nuance", "Center for Youth Engagement", "Undergraduate Course Assistant"];
                             var counter = 0;
                             var experiencesClass = document.getElementsByClassName("changeTextExperiences")[0];
-			                var companiesClass = document.getElementsByClassName("changeTextCompany")[0];
+			    var companiesClass = document.getElementsByClassName("changeTextCompany")[0];
                             
                             setInterval(() => {
                                     experiencesClass.classList.add('hideExperiences');
@@ -44,7 +44,7 @@ const Experiences = () => {
                                     experiencesClass.innerHTML = text[counter];
                                     experiencesClass.classList.remove('hideExperiences');
 				                    
-                                    companiesClass.innerHTML = text[counter];
+                                    companiesClass.innerHTML = companyName[counter];
                                     companiesClass.classList.remove('hideExperiences');
                                     
                                     counter++;
