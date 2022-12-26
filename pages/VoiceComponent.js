@@ -30,7 +30,9 @@ function Voice() {
                         var voiceText = document.getElementsByClassName("changeVoiceText")[0];
                         setInterval(() => {
                                 voiceText.innerHTML = textVoice[counterVoice];
-                                counterVoice++;
+                                if(blinkingRecord.style.display == "none") {
+                                    counterVoice++;
+                                }
                                 if (counterVoice >= textVoice.length) {
                                   counterVoice = 0;
                                 }
