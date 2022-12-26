@@ -68,14 +68,16 @@ function About() {
             </div>
             
             </Grid>
-            <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
+            <Grid item xs={4} style={{backgroundSize: '50%', backgroundRepeat: 'no-repeat'}} sm={8} md={4}>
                 <motion.div
-                    animate={{
-                      scale: [1, 2, 2, 1, 1],
-                      rotate: [0, 0, 270, 270, 0],
-                      borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
                     }}
-                 > 
+                  >
                     <Image src={myPic} className="zIndexmyPic"/>
                 </motion.div>
             </Grid>
