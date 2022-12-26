@@ -41,21 +41,22 @@ function Voice() {
         
                     var blinkingRecord = document.getElementsByClassName('blinkingRecord')[0];
                     blinkingRecord.style.display = "none";
+                    buttonTalk.style.display = "inline-block";
                     var buttonTalk = document.getElementsByClassName('talk')[0];
                     var contentTalk = document.getElementsByClassName('contentTalk')[0];
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
                     var SpeechRecognitionTalk = window.SpeechRecognitionTalk || window.webkitSpeechRecognition;
                     var recognitionTalk = new SpeechRecognitionTalk();
-        recognitionTalk.onstart = function () {
-        blinkingRecord.style.display = "inline-block";
-        buttonTalk.style.display = "none";
-                    console.log("voice is activiated");
-                    contentTalk.innerHTML = "";
-                    answerTalk.innerHTML = "";
-                    buttonTalk.style.background = "grey";
-                    document.body.style.pointerEvents = "none";
+                    recognitionTalk.onstart = function () {
+                        blinkingRecord.style.display = "inline-block";
+                        buttonTalk.style.display = "none";
+                        console.log("voice is activiated");
+                        contentTalk.innerHTML = "";
+                        answerTalk.innerHTML = "";
+                        buttonTalk.style.background = "grey";
+                        document.body.style.pointerEvents = "none";
                     
-                };
+                    };
                 recognitionTalk.onresult = function(event) {
                     blinkingRecord.style.display = "none";
                     document.body.style.pointerEvents = "auto";
