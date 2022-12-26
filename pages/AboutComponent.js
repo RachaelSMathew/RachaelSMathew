@@ -48,7 +48,7 @@ function About() {
 
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
-                <Grid item xs={4} sm={8} md={8} lg={11}>
+                <Grid item xs={4} sm={5} md={8} lg={11}>
             <ul className="nav-pills">
               <li className="nav-item">
                 <a className="nav-link active" data-toggle="pill">about.java</a>
@@ -68,7 +68,7 @@ function About() {
             </div>
             
             </Grid>
-            <Grid item xs={4} style={{backgroundSize: '50%', backgroundRepeat: 'no-repeat'}} sm={0} md={4} lg={5}>
+            <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={3} md={4} lg={5}>
                 <Image src={myPic} className="zIndexmyPic"/>
             </Grid>
             
