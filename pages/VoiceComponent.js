@@ -30,7 +30,7 @@ function Voice() {
                         var voiceText = document.getElementsByClassName("changeVoiceText")[0];
                         setInterval(() => {
                                 voiceText.innerHTML = textVoice[counterVoice];
-                                if(blinkingRecord.style.display == "none" && buttonTalk.style.display == "inline-block") {
+                                if(blinkingRecord.style.display == "none") {
                                     counterVoice++;
                                 }
                                 if (counterVoice >= textVoice.length) {
@@ -41,7 +41,6 @@ function Voice() {
         
                     var blinkingRecord = document.getElementsByClassName('blinkingRecord')[0];
                     blinkingRecord.style.display = "none";
-                    buttonTalk.style.display = "inline-block";
                     var buttonTalk = document.getElementsByClassName('talk')[0];
                     var contentTalk = document.getElementsByClassName('contentTalk')[0];
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
