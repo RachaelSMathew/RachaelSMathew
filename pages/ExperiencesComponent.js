@@ -72,13 +72,13 @@ const Experiences = () => {
                 <Grid container wrap="nowrap" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                 <Grid item zeroMinWidth xs={0} sm={3} md={3} lg={3}>
                 <ThemeProvider theme={theme}>
-                <Typography variant="h3" sx={{ fontWeight: 'bold' }}><div className="changeTextCompany"></div>
+                <Typography style={{overflowWrap: 'break-word'}} sx={{ fontWeight: 'bold' }}><div className="changeTextCompany"></div>
                 </Typography>
                 </ThemeProvider>
                 </Grid>
                 <Grid item zeroMinWidth xs={4} sm={5} md={9} lg={13}>
                 <ThemeProvider theme={theme}>
-                <Typography variant="h4" align="left" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
+                <Typography style={{overflowWrap: 'break-word'}} align="left" sx={{ fontWeight: 'bold' }}><div className="changeTextExperiences"></div>
                 </Typography>
                 </ThemeProvider>
                 </Grid>
