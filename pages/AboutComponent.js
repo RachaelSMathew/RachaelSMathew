@@ -28,11 +28,6 @@ function About() {
 
     return (
             <React.Fragment>
-            <div className="separator">
-            <div className="line"></div>
-            <h1 style={{color: 'mediumpurple'}}>About</h1>
-            <div className="line"></div>
-            </div>
             
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
                
