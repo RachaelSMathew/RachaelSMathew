@@ -34,11 +34,6 @@ const Skills = () => {
         return (
                 <React.Fragment>
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5,duration:1.5}}>
-                <div className="separator">
-                <div className="line"></div>
-                <h1 className = "styleSkills" style={{color: 'mediumpurple'}}>Skills</h1>
-                <div className="line"></div>
-                </div>
                 
                 <Box sx={{ flexGrow: 1 }} className="flexBehindFooter">
                   <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12 }}>
