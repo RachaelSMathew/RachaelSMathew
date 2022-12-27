@@ -14,19 +14,19 @@ function Tabs() {
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Tab 1
+         iRobot
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          Tab 2
+         Nuance
         </button>
         <button
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          Tab 3
+          Center for Youth Engagement 
         </button>
       </div>
 
@@ -34,38 +34,36 @@ function Tabs() {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2>Content 1</h2>
+          <h2>Software DevOps Co-op</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
+            Created automated Jenkins pipelines using EC2 instances and executed tasks in a Docker container using an ECR image. 
+            Automated tasks such as configuring repositories, producing and uploading build files to Artifactory, syncing files between repositories, running tests on robots, and printing the test results to Slack 
+            Developed a feature for Bitbucket pull request pages using ScriptRunner and Groovy, which sends requests from Bitbucket to Jenkins to trigger a pipeline. 
           </p>
         </div>
 
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>Content 2</h2>
+          <h2>iOS Mobile Development Intern</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
+            Used YAML pipelines in Azure DevOps to create Xcode simulator builds and run snapshot tests.
+            Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.
           </p>
         </div>
 
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
-          <h2>Content 3</h2>
+          <h2>iOS Developer</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
+           Created a calendar, which could have events created and added on as a part of the CYE iPad app using Swift and Xcode
+           Transferred video files to AWS S3 storage and used AWS CLI to create a Bash script to download and upload video files  
+           Sent iOS logs to AWS Cloudwatch using AWS Soto Swift Package Manager in Xcode 
+
           </p>
         </div>
       </div>
