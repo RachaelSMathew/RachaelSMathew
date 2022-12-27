@@ -28,7 +28,7 @@ function About() {
 
     return (
             <React.Fragment>
-            
+            <div className="separator"></div>
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
                
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
