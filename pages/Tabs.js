@@ -35,7 +35,7 @@ function Tabs() {
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           <h2>Software DevOps Co-op</h2>
-          <hr />
+          <centern><hr /></center>
           <p>
             Created automated Jenkins pipelines using EC2 instances and executed tasks in a Docker container using an ECR image. 
             Automated tasks such as configuring repositories, producing and uploading build files to Artifactory, syncing files between repositories, running tests on robots, and printing the test results to Slack 
@@ -47,7 +47,7 @@ function Tabs() {
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
           <h2>iOS Mobile Development Intern</h2>
-          <hr />
+          <centern><hr /></center>
           <p>
             Used YAML pipelines in Azure DevOps to create Xcode simulator builds and run snapshot tests.
             Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.
@@ -58,7 +58,7 @@ function Tabs() {
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
           <h2>iOS Developer</h2>
-          <hr />
+          <centern><hr /></center>
           <p>
            Created a calendar, which could have events created and added on as a part of the CYE iPad app using Swift and Xcode
            Transferred video files to AWS S3 storage and used AWS CLI to create a Bash script to download and upload video files  
