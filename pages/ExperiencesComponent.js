@@ -21,6 +21,10 @@ import CubeThree from './CubeThree'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 
+import React, { useRef, Suspense } from 'react'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
+import { TextureLoader } from 'three/src/loaders/TextureLoader.js'
+
 const Experiences = () => {
 
     let theme = createTheme();
@@ -63,7 +67,16 @@ const Experiences = () => {
                 <div className="separator"></div>
 	            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
             	<Grid item xs={4} sm={8} md={7} lg={12}><Tabs/></Grid>
-                <Grid item xs={4} sm={8} md={5} lg={4}><Cube3d/></Grid>
+                <Grid item xs={4} sm={8} md={5} lg={4}>
+		      <Canvas>
+		      <ambientLight intensity={0.5} />
+		      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+		      <pointLight position={[-10, -10, -10]} />
+		      <Suspense fallback={null}>
+		      <Box />
+		      </Suspense>
+		      </Canvas>
+		</Grid>
                 </Grid>
                 </motion.div>
                 </React.Fragment>
