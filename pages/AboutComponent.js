@@ -68,7 +68,7 @@ function About() {
             </div>
             
             </Grid>
-            <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={3} md={4} lg={5}>
+            <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={3} md={4} lg={5} display={{ xs: "none" }}>
                 <Image src={myPic} className="zIndexmyPic"/>
             </Grid>
             
