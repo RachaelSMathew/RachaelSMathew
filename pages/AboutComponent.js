@@ -48,7 +48,7 @@ function About() {
 
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
-                <Grid item xs={4} sm={5} md={8} lg={11}>
+                <Grid item xs={4} sm={8} md={8} lg={11}>
             <ul className="nav-pills">
               <li className="nav-item">
                 <a className="nav-link active" data-toggle="pill">about.java</a>
