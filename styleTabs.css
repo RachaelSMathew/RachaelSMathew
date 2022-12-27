@@ -25,6 +25,7 @@
 }
 .tabs {
   padding: 15px;
+  word-break: normal;
   text-align: center;
   width: 50%;
   background: rgba(128, 128, 128, 0.075);
