@@ -22,19 +22,19 @@ const Cube3d = () => {
                                cursor: 'grab'
                             }}
                            >
-                           <Cube size={350} index="back">
+                           <Cube size={200} index="back">
                 <div>
-                <Image width={350} height={350} src={Neb2}/>
+                <Image width={200} height={200} src={Neb2}/>
                 </div>
                 
                 <div>
-                <Image width={350} height={350} src={FP}/>
+                <Image width={200} height={200} src={FP}/>
                 </div>
                 <div>
-                <Image width={350} height={350} src={Neb}/>
+                <Image width={200} height={200} src={Neb}/>
                 </div>
                 <div>
-                <Image width={350} height={350} src={CYE}/>
+                <Image width={200} height={200} src={CYE}/>
                 </div>
                 <div>
                     <Image src={UMass}/>
