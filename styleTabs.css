@@ -4,11 +4,7 @@
   padding: 0;
 }
 
-body {
-  background: #fff;
-}
-
-.container {
+.containerExperience {
   display: flex;
   flex-direction: column;
   position: relative;
