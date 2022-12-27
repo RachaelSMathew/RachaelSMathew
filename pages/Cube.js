@@ -17,8 +17,8 @@ const Cube3d = () => {
                        <center>
                            <div
                            style={{
-                               width: 350,
-                               height: 350,
+                               width: 200,
+                               height: 200,
                                cursor: 'grab'
                             }}
                            >
