@@ -60,8 +60,10 @@ const Experiences = () => {
                 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                 <div className="separator"></div>
-            	<Tabs/>
-            
+	        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+            	<Grid item xs={4} sm={4} md={7} lg={12}><Tabs/></Grid>
+                <Grid item xs={4} sm={4} md={5} lg={4}><Cube3d/></Grid>
+                </Grid>
                 </motion.div>
                 </React.Fragment>
                 
