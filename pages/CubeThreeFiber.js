@@ -3,12 +3,12 @@ import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three/src/loaders/TextureLoader.js'
 
 function CubeThreeFiber() {
-  const texture_1 = useLoader(TextureLoader, 'textures/dice_1.jpg')
-  const texture_2 = useLoader(TextureLoader, 'textures/dice_2.jpg')
-  const texture_3 = useLoader(TextureLoader, 'textures/dice_3.jpg')
-  const texture_4 = useLoader(TextureLoader, 'textures/dice_4.jpg')
-  const texture_5 = useLoader(TextureLoader, 'textures/dice_5.jpg')
-  const texture_6 = useLoader(TextureLoader, 'textures/dice_6.jpg')
+  const texture_1 = useLoader(TextureLoader, '../images/CYE-icon-2.png')
+  const texture_2 = useLoader(TextureLoader, '../images/iRobot-icon.png')
+  const texture_3 = useLoader(TextureLoader, '../images/FP-icon-2.png')
+  const texture_4 = useLoader(TextureLoader, '../images/Nuance-icon-2.png')
+  const texture_5 = useLoader(TextureLoader, '../images/Neb-icon.png')
+  const texture_6 = useLoader(TextureLoader, '../images/Neb2-icon.png')
   const mesh = useRef()
   useFrame(() => {
     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
