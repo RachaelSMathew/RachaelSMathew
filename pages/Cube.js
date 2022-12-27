@@ -3,7 +3,7 @@ import Cube from 'react-3d-cube';
 import React from 'react'
 import { useEffect, useRef } from "react";
 import Nuance from "../images/Nuance-icon-2.png";
-import UMass from "../images/UMass-icon-2.png";
+import iRobot from "../images/iRobot-icon.png";
 import CYE from "../images/CYE-icon-2.png";
 import FP from "../images/FP-icon-2.png";
 import Neb from "../images/Neb-icon.png";
@@ -37,7 +37,7 @@ const Cube3d = () => {
                 <Image width={200} height={200} src={CYE}/>
                 </div>
                 <div>
-                    <Image src={UMass}/>
+                    <Image src={iRobot}/>
                 </div>
                 <div>
                     <Image src={Nuance}/>
