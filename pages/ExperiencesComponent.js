@@ -4,7 +4,7 @@
 //
 //  Created by Rachael Mathew on 12/25/21.
 //
-
+import React, { useRef, Suspense } from 'react'
 import Script from 'next/script'
 import Tabs from './Tabs'
 import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
@@ -18,7 +18,6 @@ import {motion} from 'framer-motion'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 
-import React, { useRef, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three/src/loaders/TextureLoader.js'
 
