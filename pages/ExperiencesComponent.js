@@ -17,6 +17,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
 import Cube3d from './Cube'
+import CubeThree from './CubeThree'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 
@@ -60,9 +61,9 @@ const Experiences = () => {
                 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                 <div className="separator"></div>
-	        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
-            	<Grid item xs={4} sm={4} md={7} lg={12}><Tabs/></Grid>
-                <Grid item xs={4} sm={4} md={5} lg={4}><Cube3d/></Grid>
+	            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+            	<Grid item xs={4} sm={8} md={7} lg={12}><Tabs/></Grid>
+                <Grid item xs={4} sm={8} md={5} lg={4}><CubeThree/></Grid>
                 </Grid>
                 </motion.div>
                 </React.Fragment>
