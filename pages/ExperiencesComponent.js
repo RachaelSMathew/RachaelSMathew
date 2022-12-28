@@ -10,7 +10,7 @@ import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import { useState, useEffect } from "react";
 //using curly brackets, within react-router-dom multiple modules you can pull from, no defualt, need to be specific
 import { experimentalStyled as styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import CubeThreeFiber from './CubeThreeFiber';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
