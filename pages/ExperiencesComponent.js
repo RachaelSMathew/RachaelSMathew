@@ -10,7 +10,6 @@ import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import { useState, useEffect } from "react";
 //using curly brackets, within react-router-dom multiple modules you can pull from, no defualt, need to be specific
 import { experimentalStyled as styled } from '@mui/material/styles';
-import CubeThreeFiber from './CubeThreeFiber';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
@@ -51,7 +50,6 @@ const Experiences = () => {
                     </Grid>
 		    <Grid item xs={4} sm={4} md={3} lg={4}>
                         <Suspense fallback={null}>
-                        <CubeThreeFiber />
                         </Suspense>
                     </Grid>
                 </Grid>
