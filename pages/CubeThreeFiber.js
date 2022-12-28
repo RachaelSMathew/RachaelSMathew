@@ -1,7 +1,7 @@
-import React, { useRef, Suspense } from 'react'
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
+import React, { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 
-function CubeThreeFiber() {
+function CubeThreeFiber(props) {
   const mesh = useRef()
   useFrame(() => {
     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
