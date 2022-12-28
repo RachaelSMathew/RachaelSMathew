@@ -55,7 +55,7 @@ const Experiences = () => {
                         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                         <pointLight position={[-10, -10, -10]} />
                         <Suspense fallback={null}>
-                        <Box />
+                        <CubeThreeFiber position={[0, 0, 0]} />
                         </Suspense>
                         </Canvas>
                     </Grid>
