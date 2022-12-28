@@ -6,16 +6,12 @@
 //
 import React, { useRef, Suspense } from 'react'
 import Script from 'next/script'
-import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import { useState, useEffect } from "react";
 //using curly brackets, within react-router-dom multiple modules you can pull from, no defualt, need to be specific
-import { experimentalStyled as styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { Typography, ThemeProvider } from '@mui/material';
 
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import Image from 'next/image'
 import PlutoCYE from '../images/PlutoCYE.png';
 import JupiteriRobot from '../images/JupiteriRobot.png';
@@ -57,6 +53,6 @@ const Experiences = () => {
                 </React.Fragment>
                 
         );
-}
+};
 
 export default Experiences;
