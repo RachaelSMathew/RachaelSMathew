@@ -50,14 +50,9 @@ const Experiences = () => {
                             <div class="textExperiences">CYE</div>
                     </Grid>
 		    <Grid item xs={4} sm={4} md={3} lg={4}>
-                        <Canvas>
-                        <ambientLight intensity={0.5} />
-                        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                        <pointLight position={[-10, -10, -10]} />
                         <Suspense fallback={null}>
-                        <CubeThreeFiber position={[0, 0, 0]} />
+                        <CubeThreeFiber />
                         </Suspense>
-                        </Canvas>
                     </Grid>
                 </Grid>
                 </motion.div>
