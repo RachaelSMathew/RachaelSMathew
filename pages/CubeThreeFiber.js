@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
-function CubeThreeFiber(props) {
+const CubeThreeFiber = (props) => {
   const mesh = useRef()
   useFrame(() => {
     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
@@ -12,4 +12,6 @@ function CubeThreeFiber(props) {
        <meshStandardMaterial color={"orange"} />
     </mesh>
  );
-}
+};
+
+export default CubeThreeFiber;
