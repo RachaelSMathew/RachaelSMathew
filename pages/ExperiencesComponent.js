@@ -35,7 +35,7 @@ const Experiences = () => {
                 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
                 <div className="separator"></div>
-	            <Grid className="containerExperiences" container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+	        <Grid className="containerExperiences" container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                     <Grid item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModal(true)} />
                             <Modal open={openModal} onClose={() => setOpenModal(false)} />
@@ -48,6 +48,16 @@ const Experiences = () => {
                     <Grid item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200}/>
                             <div class="textExperiences">CYE</div>
+                    </Grid>
+		    <Grid item xs={4} sm={4} md={3} lg={4}>
+                        <Canvas>
+                        <ambientLight intensity={0.5} />
+                        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                        <pointLight position={[-10, -10, -10]} />
+                        <Suspense fallback={null}>
+                        <Box />
+                        </Suspense>
+                        </Canvas>
                     </Grid>
                 </Grid>
                 </motion.div>
