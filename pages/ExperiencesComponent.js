@@ -39,16 +39,16 @@ const Experiences = () => {
                             <div class="textExperiences">iRobot</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image className="imageExperiences" src={NasaNuance}  width={200} height={200}/>
+                        <Image className="imageExperiences" src={NasaNuance}  width={200} height={200} onClick={() => setOpenModal(true)} />
                             <Modal_Nuance open={openModal} onClose={() => setOpenModal(false)} />
                             <div class="textExperiences">Nuance</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200}/>
+                        <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200} onClick={() => setOpenModal(true)} />
                             <Modal_CYE open={openModal} onClose={() => setOpenModal(false)} />
                             <div class="textExperiences">CYE</div>
                     </Grid>
-		            <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
+		    <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <CubeThreeFiber />
                     </Grid>
                 </Grid>
