@@ -83,7 +83,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.textExperiences:hover{
+.textExperiences:hover + .imageExperiences{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
