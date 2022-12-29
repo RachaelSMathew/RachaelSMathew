@@ -39,7 +39,7 @@ const Skills = () => {
                 <Box sx={{ flexGrow: 1 }} className="flexBehindFooter">
                 <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12 }}>
                 <Grid item xs={2} sm={3} md={2}>
-                <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
+                <motion.div transition={{type: 'spring', stiffness: 800}}>
                 <Image src={SkillsTextImage} />
                 </motion.div>
                 </Grid>
