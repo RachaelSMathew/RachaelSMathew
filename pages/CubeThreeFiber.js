@@ -7,8 +7,11 @@ function Box(props) {
   // Hold state for hovered and clicked events
   const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
+  const color = ["#9b79d8", "lightpink", "lightblue"];
+  const speed = [0.03, -0.04, 0.01, 0.07];
+  
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.y += delta))
+  useFrame((state, delta) => (ref.current.rotation.x= ref.current.rotation.y+= speed[Math.floor(Math.random() * 4)]))
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh
@@ -17,8 +20,8 @@ function Box(props) {
       scale={clicked ? 1.5 : 1}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
-      <boxGeometry args={[1.5, 1.5, 1.5]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : '#9b79d8'} />
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : color[Math.floor(Math.random() * 3)]} />
     </mesh>
   )
 }
@@ -31,8 +34,8 @@ export default function CubeThreeFiber() {
       <pointLight position={[-10, -10, -10]} />
       <Box position={[-1.2, 0, 0]} />
       <Box position={[1.2, 0, 0]} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
+      <Box position={[0, 1, 0]} />
+      <Box position={[0, -1, 0]} />
     </Canvas>
   )
 }
