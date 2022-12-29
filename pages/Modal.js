@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useRef, Suspense } from 'react';
 
 const Modal = ({ open, onClose }) => {
-  if (!open) return null;
+    if (!open) return null;
+    const ref = useRef()
+
+    useEffect(() => {
+    	const checkIfClickedOutside = (e) => {
+     	 // If the menu is open and the clicked target is not within the menu,
+    	  // then close the menu
+     	 if (ref.current && !ref.current.contains(e.target)) {
+      	 onClose();
+        }
+    };
+
+    document.addEventListener("click", checkIfClickedOutside)
+
+    return () => {
+     	 // Cleanup the event listener
+     	 document.removeEventListener("click", checkIfClickedOutside)
+    	}
+    }, [onClose]);
+            
   return (
     <div onClick={onClose} className='overlayExp'>
       <div
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className='modalContainerExp'
+        className='modalContainerExp' ref={ref}
       >
         <div className='modalRightExp'>
           <p className='closeBtnExp' onClick={onClose}>
