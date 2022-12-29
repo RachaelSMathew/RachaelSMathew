@@ -19,8 +19,8 @@ function Box(props) {
       scale={clicked ? 1.5 : 1}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
-      <boxGeometry args={[3, 3, 3]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : color[Math.floor(Math.random() * 3)]} />
+      <boxGeometry args={[2, 2, 2]} />
+      <meshStandardMaterial color={hovered ? color[Math.floor(Math.random() * 3)] : 'orange'} />
     </mesh>
   )
 }
@@ -31,10 +31,10 @@ export default function CubeThreeFiber() {
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
-      <Box position={[0, 1, 0]} />
-      <Box position={[0, -1, 0]} />
+      <Box position={[-2.5, 0, 0]} />
+      <Box position={[2.5, 0, 0]} />
+      <Box position={[0, 2.5, 0]} />
+      <Box position={[0, -2.5, 0]} />
     </Canvas>
   )
 }
