@@ -51,6 +51,7 @@
 .imageExperiences {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .imageExperiences:hover{
