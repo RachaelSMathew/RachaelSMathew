@@ -23,7 +23,25 @@ const Experiences = () => {
     let theme = createTheme();
     theme = responsiveFontSizes(theme);
     const [openModal, setOpenModal] = useState(false);
-    
+    const ref = useRef()
+
+    useEffect(() => {
+    	const checkIfClickedOutside = e => {
+     	 // If the menu is open and the clicked target is not within the menu,
+    	  // then close the menu
+     	 if (openModal && ref.current && !ref.current.contains(e.target)) {
+      	 setOpenModal(false)
+        }
+    }
+
+    document.addEventListener("mousedown", checkIfClickedOutside)
+
+    return () => {
+     	 // Cleanup the event listener
+     	 document.removeEventListener("mousedown", checkIfClickedOutside)
+    	}
+    }, [openModal])
+	
         return (
                 
                 <React.Fragment>
