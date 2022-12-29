@@ -24,7 +24,9 @@ const Experiences = () => {
 
     let theme = createTheme();
     theme = responsiveFontSizes(theme);
-    const [openModal, setOpenModal] = useState(false);
+    const [openModalCYE, setOpenModalCYE] = useState(false);
+    const [openModaliRobot, setOpenModaliRobot] = useState(false);
+    const [openModalNuance, setOpenModalNuance] = useState(false);
 	
         return (
                 
@@ -34,18 +36,18 @@ const Experiences = () => {
                 <div className="separator"></div>
 	            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
 	                <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image class="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModal(true)} />
-                            <Modal_iRobot open={openModal} onClose={() => setOpenModal(false)} />
+                        <Image class="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModaliRobot(true)} />
+                            <Modal_iRobot open={openModaliRobot} onClose={() => setOpenModaliRobot(false)} />
                             <div class="textExperiences">iRobot</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image className="imageExperiences" src={NasaNuance}  width={200} height={200} onClick={() => setOpenModal(true)} />
-                            <Modal_Nuance open={openModal} onClose={() => setOpenModal(false)} />
+                        <Image className="imageExperiences" src={NasaNuance}  width={200} height={200} onClick={() => setOpenModalNuance(true)} />
+                            <Modal_Nuance open={openModalNuance} onClose={() => setOpenModalNuance(false)} />
                             <div class="textExperiences">Nuance</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200} onClick={() => setOpenModal(true)} />
-                            <Modal_CYE open={openModal} onClose={() => setOpenModal(false)} />
+                        <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200} onClick={() => setOpenModalCYE(true)} />
+                            <Modal_CYE open={openModalCYE} onClose={() => setOpenModalCYE(false)} />
                             <div class="textExperiences">CYE</div>
                     </Grid>
 		    <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
