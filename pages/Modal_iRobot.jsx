@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Modal = ({ open, onClose }) => {
+const Modal_iRobot = ({ open, onClose }) => {
     if (!open) return null;
             
   return (
@@ -16,8 +16,8 @@ const Modal = ({ open, onClose }) => {
             X
           </p>
           <div className='contentExp'>
-            <h1>$20 CREDIT</h1>
-            <p>for your first tade?</p>
+            <h1>Software DevOps Co-op</h1>
+            <p>Created automated Jenkins pipelines using EC2 instances and executed tasks in a Docker container using an ECR image. Developed a feature for Bitbucket pull request pages using ScriptRunner and Groovy, which sends requests from Bitbucket to Jenkins to trigger a pipeline.</p>
           </div>
         </div>
       </div>
@@ -25,4 +25,4 @@ const Modal = ({ open, onClose }) => {
   );
 };
 
-export default Modal;
+export default Modal_iRobot;
