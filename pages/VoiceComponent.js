@@ -64,31 +64,26 @@ function Voice() {
                     console.log(transcript);
                     if(transcript.includes("how old is Rachel")) {
                         setTimeout(function(){
-                            answerTalk.style.color = "black";
                             answerTalk.innerHTML = "She is 22 years old :)";
                         },1000);
                     }
                     else if(transcript.includes("who is Rachel")) {
                         setTimeout(function(){
-                            answerTalk.style.color = "black";
                             answerTalk.innerHTML = "An ambitious girl who's trying her best at life and happiness";
                         },1000);
                     }
                     else if(transcript.includes("how tall is Rachel")) {
                         setTimeout(function(){
-                            answerTalk.style.color = "black";
                             answerTalk.innerHTML = "She's 7'12";
                         },1000);
                     }
                     else if(transcript.includes("how is Rachel")) {
                         setTimeout(function(){
-                            answerTalk.style.color = "black";
                             answerTalk.innerHTML = "Amazing now that you're here!";
                         },1000);
                     }
                     else {
                         setTimeout(function(){
-                            answerTalk.style.color = "black";
                             answerTalk.innerHTML = "Oops we don't have an answer for that yet!";
                         },1000);
                     }
