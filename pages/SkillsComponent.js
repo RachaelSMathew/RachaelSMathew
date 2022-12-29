@@ -15,6 +15,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
+import SkillsTextImage from '../images/SkillsTextImage.png';
 import Java from '../images/icons-java.png';
 import Swift from '../images/icons-swift.png';
 import YAML from '../images/icons-yaml.png';
@@ -39,7 +40,8 @@ const Skills = () => {
                 <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12 }}>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
-                <h1 className = "styleSkills" style={{color: 'mediumpurple'}}>Skills</h1>
+                <Image src={SkillsTextImage}  width={100}
+                height={100}/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
