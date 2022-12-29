@@ -12,12 +12,12 @@ const Modal = ({ open, onClose }) => {
         className='modalContainerExp'
       >
         <div className='modalRightExp'>
-          <p className='closeBtnExp' onClick={onClose}>
+          <p style="color: white" className='closeBtnExp' onClick={onClose}>
             X
           </p>
           <div className='contentExp'>
-            <h1>$20 CREDIT</h1>
-            <p>for your first tade?</p>
+            <h1 style="color: white">$20 CREDIT</h1>
+            <p style="color: white">for your first tade?</p>
           </div>
         </div>
       </div>
