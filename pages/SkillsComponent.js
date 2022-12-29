@@ -37,73 +37,73 @@ const Skills = () => {
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5,duration:1.5}}>
                 <div className="separator"></div>
                 <Box sx={{ flexGrow: 1 }} className="flexBehindFooter">
-                <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12 }}>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12, lg: 14}}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div transition={{type: 'spring', stiffness: 800}}>
                 <Image src={SkillsTextImage} />
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Java}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={JavaScript}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Swift}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={CSS}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={SQL}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={HTML5}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={AWSCognito}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={AWSS3}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={YAML}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Azure}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
-                <Grid item xs={2} sm={3} md={2}>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Jenkins}  width={100}
                 height={100}/>
