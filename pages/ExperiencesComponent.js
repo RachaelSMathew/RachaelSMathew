@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-
+import CubeThreeFiber from './CubeThreeFiber';
 import Image from 'next/image'
 import PlutoCYE from '../images/PlutoCYE.png';
 import JupiteriRobot from '../images/JupiteriRobot.png';
@@ -32,7 +32,7 @@ const Experiences = () => {
                 <div className="separator"></div>
 	        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
 	             <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <Image className="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModal(true)} />
+                        <Image class="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModal(true)} />
                             <Modal open={openModal} onClose={() => setOpenModal(false)} />
                             <div class="textExperiences">iRobot</div>
                     </Grid>
@@ -43,6 +43,9 @@ const Experiences = () => {
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200}/>
                             <div class="textExperiences">CYE</div>
+                    </Grid>
+		    <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
+                        <CubeThreeFiber />
                     </Grid>
                 </Grid>
                 </motion.div>
