@@ -18,8 +18,8 @@ function Box(props) {
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
-      <boxGeometry args={[3.5, 3.5, 3.5]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+      <boxGeometry args={[4, 4, 4]} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : 'purple'} />
     </mesh>
   )
 }
