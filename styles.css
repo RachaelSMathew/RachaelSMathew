@@ -15,7 +15,7 @@
 
 .modalContainerExp {
   background-image: linear-gradient(black, purple), url("./images/NasaModalImage.jpeg");
-  background-blend-mode: saturation;
+  background-blend-mode: hard-light;
   max-width: 600px;
   width: 100%;
   position: fixed;
@@ -40,6 +40,7 @@
   right: 8px;
   color: white;
   cursor: pointer;
+  font-size: 40px;
 }
 
 .contentExp {
