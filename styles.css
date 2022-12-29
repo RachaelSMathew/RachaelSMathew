@@ -65,7 +65,7 @@
 }
 
 .textExperiences {
-opacity: 0;
+  opacity: 0;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -75,6 +75,10 @@ opacity: 0;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.textExperiences:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 /********************AUDIO TALK***************************/
 .talk {
