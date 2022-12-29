@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
 function Box(props) {
   const mesh = useRef()
