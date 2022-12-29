@@ -15,11 +15,12 @@ import CubeThreeFiber from './CubeThreeFiber';
 import Image from 'next/image'
 import PlutoCYE from '../images/PlutoCYE.png';
 import JupiteriRobot from '../images/JupiteriRobot.png';
-import NebulaUMass from '../images/NebulaUMass.png';
+import UranusUCA from '../images/UranusUCA.png';
 import NasaNuance from '../images/NasaNuance.png';
 import Modal_CYE from './Modal_CYE';
 import Modal_iRobot from './Modal_iRobot';
 import Modal_Nuance from './Modal_Nuance';
+import Modal_UCA from './Modal_UCA';
 const Experiences = () => {
 
     let theme = createTheme();
@@ -27,6 +28,7 @@ const Experiences = () => {
     const [openModalCYE, setOpenModalCYE] = useState(false);
     const [openModaliRobot, setOpenModaliRobot] = useState(false);
     const [openModalNuance, setOpenModalNuance] = useState(false);
+    const [openModalUCA, setOpenModalUCA] = useState(false);
 	
         return (
                 
@@ -50,8 +52,10 @@ const Experiences = () => {
                             <Modal_CYE open={openModalCYE} onClose={() => setOpenModalCYE(false)} />
                             <div class="textExperiences">CYE</div>
                     </Grid>
-		    <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
-                        <CubeThreeFiber />
+		            <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
+                        <Image className="imageExperiences" src={UranusUCA}  width={200} height={200} onClick={() => setOpenModalUCA(true)} />
+                            <Modal_UCA open={openModalUCA} onClose={() => setOpenModalUCA(false)} />
+                            <div class="textExperiences">UCA</div>
                     </Grid>
                 </Grid>
                 </motion.div>
