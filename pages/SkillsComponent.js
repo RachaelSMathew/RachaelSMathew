@@ -25,6 +25,8 @@ import Azure from '../images/icons-azure.png';
 import SQL from '../images/icons-sql.png';
 import Mapbox from '../images/icons-mapbox.png';
 import AWSS3 from '../images/aws-s3-icon.svg';
+import Wordpress from '../images/icons-wordpress.png';
+import Scriptrunner from '../images/icon-scriptrunner.png';
 import AWSCognito from '../images/icons-aws-cognito.png';
 import Jenkins from '../images/icons-jenkins.png';
 import JavaScript from '../images/icons-javascript.png';
@@ -106,6 +108,18 @@ const Skills = () => {
                 <Grid item xs={2} sm={3} md={3} lg={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Jenkins}  width={100}
+                height={100}/>
+                </motion.div>
+                </Grid>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
+                <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
+                <Image src={Wordpress}  width={100}
+                height={100}/>
+                </motion.div>
+                </Grid>
+                <Grid item xs={2} sm={3} md={3} lg={2}>
+                <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
+                <Image src={Scriptrunner}  width={100}
                 height={100}/>
                 </motion.div>
                 </Grid>
