@@ -7,7 +7,7 @@
 }
 
 .modalContainerExp {
-  background-image: url("https://blogs.nasa.gov/spacestation/wp-content/uploads/sites/240/2022/10/blog_iss066e175249.jpg");
+  background-image: url("./images/NasaModalImage.jpeg");
   max-width: 600px;
   width: 100%;
   position: fixed;
