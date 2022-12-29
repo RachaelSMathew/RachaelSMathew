@@ -15,7 +15,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
-import SkillsTextImage from '../images/SkillsTextImage.png';
+import SkillsTextImage from '../images/SkillsTextImage_2.png';
 import Java from '../images/icons-java.png';
 import Swift from '../images/icons-swift.png';
 import YAML from '../images/icons-yaml.png';
