@@ -7,7 +7,8 @@
 }
 
 .modalContainerExp {
-  background-image: url("./images/NasaModalImage.jpeg");
+  background-image: linear-gradient(black, purple), url("./images/NasaModalImage.jpeg");
+  background-blend-mode: saturation;
   max-width: 600px;
   width: 100%;
   position: fixed;
@@ -16,7 +17,7 @@
   transform: translate(-50%, -50%);
   display: flex;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
-  border: 2px solid black;
+  border: 2px solid #800080;
   border-radius: 25% 10%;
   background-repeat: no-repeat;
   background-size: fill;
