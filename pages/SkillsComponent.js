@@ -40,8 +40,7 @@ const Skills = () => {
                 <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12 }}>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
-                <Image src={SkillsTextImage}  width={100}
-                height={100}/>
+                <Image src={SkillsTextImage} />
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
