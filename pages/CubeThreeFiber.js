@@ -10,9 +10,9 @@ function Box(props) {
   useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += 0.01))
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
-    <mesh {...props} ref={ref} >
-      <torusKnotGeometry args={[10, 1.6038, 23, 5, 6, 13]} />
-      <meshNormalMaterial normalMapType={1} />
+    <mesh {...props} ref={ref}>
+      <torusKnotGeometry args={[10, 1.6, 23, 5, 6, 13]} />
+      <meshLambertMaterial color="#9b79d8" linewidth= "10" />
     </mesh>
   )
 }
@@ -20,10 +20,10 @@ function Box(props) {
 export default function CubeThreeFiber() {
   return (
     <Canvas >
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={0.65} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Box position={[0, 100, 0]} />
+      <Box position={[0, 0, -25]} />
     </Canvas>
   )
 }
