@@ -3,8 +3,6 @@
 //  
 //
 //  Created by Rachael Mathew on 12/25/21.
-//
-
 import React from 'react'
 import Script from 'next/script'
 import Tabs from './Tabs'
