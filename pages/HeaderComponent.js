@@ -121,21 +121,6 @@ export default function Header({ allPostsData }) {
               </nav>
               
               <div className="topCornerIcons">
-          <i
-              className= {folder ? "happy folderSize" : "sad folderSize"}
-              onClick={() => {
-                   setFolder(prevMode => !prevMode);
-                  
-                   navLinks.classList.toggle("open");
-                   links.forEach(link => {
-                       link.classList.toggle("fade");
-                   });
-                   setHidden();
-       
-
-               }}
-           >
-          </i>
             <a download="Rachael's Resume" href="/Rachael_Mathew_Resume_2022.pdf">
                 <img className="downloadIcon"/>
             </a>
