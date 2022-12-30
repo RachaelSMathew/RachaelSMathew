@@ -7,10 +7,14 @@
 }
 /********************EXPERIENCES MODAL***************************/
 .backgroundExp {
-  z-index:10;
   background: url("./images/ModalBackground.png") no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 .overlayExp {
   position: fixed;
