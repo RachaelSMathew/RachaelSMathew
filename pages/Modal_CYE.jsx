@@ -4,6 +4,7 @@ const Modal_CYE = ({ open, onClose }) => {
     if (!open) return null;
             
   return (
+   <div class="backgroundExp"></div>
     <div onClick={onClose} className='overlayExp'>
       <div
         onClick={(e) => {
