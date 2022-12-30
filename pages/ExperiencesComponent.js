@@ -1,7 +1,5 @@
 //
 //  ExperiencesComponent.h
-//  
-//
 //  Created by Rachael Mathew on 12/25/21.
 //
 import React, { useRef, Suspense } from 'react'
