@@ -18,7 +18,7 @@ import myPic from '../images/imgGif.gif';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import Image from 'next/image'
-
+import CubeThreeFiber from './CubeThreeFiber'
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -29,13 +29,8 @@ function About() {
             <React.Fragment>
             <div className="separator"></div>
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
-               
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
-        aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 4;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean lovesTaylorSwift = true;<br>}"
-
-                   
-                
-                        `
+        aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 4;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean madeWithReact&Love = true;<br>}"        `
             }}
             />
             
@@ -54,7 +49,6 @@ function About() {
             <ThemeProvider theme={theme}>
             <Typography variant="h4">
             <div className="AboutMe" contentEditable="true" suppressContentEditableWarning={true}>
-            "Hi, I'm Rachael. Welcome to my site that I created using Vercel and React! I'm a CS Student at UMass Amherst. I love advancing my skills in mobile and web devlopment and write and listen to T-Swift in my free time!"
             </div>
             </Typography>
             </ThemeProvider>
@@ -63,7 +57,7 @@ function About() {
             
             </Grid>
             <Grid item xs={4} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} sm={3} md={4} lg={5} display={{ xs: "none", sm: "none", md: "block", lg: "block" }}>
-                <Image src={myPic} className="zIndexmyPic"/>
+                <CubeThreeFiber />
             </Grid>
             
                
