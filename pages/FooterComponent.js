@@ -1,11 +1,13 @@
 import React from "react";
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
+import {motion} from 'framer-motion';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 const Footer = () => (
+  <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:5.5,duration:1.5}}>
   <div className="footer">
     <div className="footer-main">
     <ul className="footer-links">
@@ -27,6 +29,7 @@ const Footer = () => (
     </ul>
     </div>
   </div>
+  </motion.div>
 );
 
 export default Footer;
