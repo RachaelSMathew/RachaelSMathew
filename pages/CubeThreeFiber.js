@@ -11,7 +11,7 @@ function Box(props) {
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh {...props} ref={ref} >
-      <torusKnotGeometry args={[10, 16038, 23, 5, 6, 13]} />
+      <torusKnotGeometry args={[10, 1.6038, 23, 5, 6, 13]} />
       <meshNormalMaterial normalMapType={1} />
     </mesh>
   )
