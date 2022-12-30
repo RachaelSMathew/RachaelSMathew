@@ -36,7 +36,7 @@ const Skills = () => {
    
         return (
                 <React.Fragment>
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5,duration:1.5}}>
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:4.5,duration:1.5}}>
                 <div className="separator"></div>
                 <Box sx={{ flexGrow: 1 }} className="flexBehindFooter">
                 <Grid container spacing={{ xs: 4, md: 3 }} columns={{ xs: 4, sm: 9, md: 12, lg: 14}}>
