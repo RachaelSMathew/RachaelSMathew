@@ -25,7 +25,7 @@ export default function CubeThreeFiber() {
       <ambientLight intensity={0.65} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Box position={[0, 0, -25]} />
+      <Box position={[0, 0, -20]} />
     </Canvas>
   )
 }
