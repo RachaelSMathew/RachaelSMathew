@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 import Links from 'next/link'
 import Voice from './VoiceComponent'
 import Script from 'next/script'
+import {motion} from 'framer-motion';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -95,6 +96,7 @@ export default function Header({ allPostsData }) {
 
     return (
           <React.Fragment>
+          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5,duration:1.5}}>
             <Script
               dangerouslySetInnerHTML={{
                 __html: `
@@ -141,6 +143,7 @@ export default function Header({ allPostsData }) {
               </ThemeProvider>
               
               <div className="hide"></div>
+          </motion.div>
           </React.Fragment>
        
       
