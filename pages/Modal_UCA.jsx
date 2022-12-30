@@ -6,6 +6,7 @@ const Modal_UCA = ({ open, onClose }) => {
             
   return (
     <div onClick={onClose} className='overlayExp'>
+      <div class="backgroundExp"></div>
       <div
         onClick={(e) => {
           e.stopPropagation();
