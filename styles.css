@@ -6204,7 +6204,8 @@ readers do not read off random characters that represent icons */
 }
 .AboutMe {
     font-family: 'Inconsolata', serif;
-    color: purple;
+    color: white;
+    font-weight: 700;
 }
 /* vietnamese */
 @font-face {
