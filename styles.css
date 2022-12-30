@@ -183,7 +183,7 @@
 }
 /********************BLINKING CURSOR***************************/
 
-.txt-rotate  { border-right: 0.1em solid purple;
+.txt-rotate  { border-right: 0.1em solid #c8ddef;
     -webkit-animation: txt-rotate 1s step-end infinite;
         animation: txt-rotate 1s step-end infinite;
     
@@ -193,7 +193,7 @@
         border-right-color: transparent
     }
     50% {
-        border-right-color: purple
+        border-right-color: #c8ddef
     }
 }
 @keyframes txt-rotate {
@@ -201,7 +201,7 @@
         border-right-color: transparent
     }
     50% {
-        border-right-color: purple
+        border-right-color: #c8ddef
     }
 }
 /********************SEPARATOR FOR SECTIONS***************************/
@@ -428,7 +428,7 @@
     
 }
 .mainFont{
-    color: purple;
+    color: #c8ddef;
 }
 
 nav {
