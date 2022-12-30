@@ -410,6 +410,7 @@
  
 }
 .happy {
+    cursor: pointer;
     content:url(./images/happy_face.png);
     width: 40px;
     height: 40px;
@@ -417,6 +418,7 @@
     
 }
 .sad {
+    cursor: pointer;
     content:url(./images/sad_face.png);
     width: 40px;
     height: 40px;
