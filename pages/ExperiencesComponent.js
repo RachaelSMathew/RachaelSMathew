@@ -38,22 +38,22 @@ const Experiences = () => {
 	                <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <Image class="imageExperiences" src={JupiteriRobot}  width={200} height={200} onClick={() => setOpenModaliRobot(true)} />
                             <Modal_iRobot open={openModaliRobot} onClose={() => setOpenModaliRobot(false)} />
-                            <div class="textExperiences">iRobot</div>
+                            <div class="textExperiences" onClick={() => setOpenModaliRobot(true)}>iRobot</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={NasaNuance}  width={200} height={200} onClick={() => setOpenModalNuance(true)} />
                             <Modal_Nuance open={openModalNuance} onClose={() => setOpenModalNuance(false)} />
-                            <div class="textExperiences">Nuance</div>
+                            <div class="textExperiences" onClick={() => setOpenModalNuance(true)}>Nuance</div>
                     </Grid>
                     <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={PlutoCYE}  width={200} height={200} onClick={() => setOpenModalCYE(true)} />
                             <Modal_CYE open={openModalCYE} onClose={() => setOpenModalCYE(false)} />
-                            <div class="textExperiences">CYE</div>
+                            <div class="textExperiences" onClick={() => setOpenModalCYE(true)} >CYE</div>
                     </Grid>
 		            <Grid className="containerExperiences" item xs={4} sm={4} md={3} lg={4}>
                         <Image className="imageExperiences" src={UranusUCA}  width={200} height={200} onClick={() => setOpenModalUCA(true)} />
                             <Modal_UCA open={openModalUCA} onClose={() => setOpenModalUCA(false)} />
-                            <div class="textExperiences">UCA</div>
+                            <div class="textExperiences" onClick={() => setOpenModalUCA(true)}>UCA</div>
                     </Grid>
                 </Grid>
                 </motion.div>
