@@ -13,13 +13,12 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import {motion} from 'framer-motion';
 import myPic from '../images/imgGif.gif';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import Image from 'next/image'
 import CubeThreeFiber from './CubeThreeFiber'
-
+import {motion} from 'framer-motion';
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
@@ -27,6 +26,7 @@ function About() {
 
     return (
             <React.Fragment>
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5,duration:1.5}}>
             <div className="separator"></div>
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
@@ -63,7 +63,7 @@ function About() {
             </Box>
             
             
-            
+            </motion.div>
             
             </React.Fragment>
     )
