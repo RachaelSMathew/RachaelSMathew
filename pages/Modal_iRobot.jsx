@@ -5,6 +5,7 @@ const Modal_iRobot = ({ open, onClose }) => {
             
   return (
     <div onClick={onClose} className='overlayExp'>
+      <div class="backgroundExp"></div>
       <div
         onClick={(e) => {
           e.stopPropagation();
