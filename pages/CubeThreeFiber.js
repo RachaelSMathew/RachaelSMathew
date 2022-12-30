@@ -1,18 +1,20 @@
-import { useRef } from 'react'
+import { useRef, useState} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 
 function Box(props) {
   // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
   // Hold state for hovered and clicked events
-
+  const [hovered, setHover] = useState(false)
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += 0.01))
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
-    <mesh {...props} ref={ref}>
+    <mesh {...props} ref={ref}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}>
       <torusKnotGeometry args={[10, 1.6, 23, 5, 6, 13]} />
-      <meshLambertMaterial color="#9b79d8" linewidth= "10" />
+      <meshStandardMaterial color={hovered ? 'hotpink' : '#9b79d8'} linewidth= "10" />
     </mesh>
   )
 }
