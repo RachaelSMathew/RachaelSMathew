@@ -165,6 +165,7 @@
     overflow-x:scroll;
     word-break: break-all;
     cursor: text;
+    border-image: linear-gradient(145deg, purple, #c68ec6) 1;
 }
 
 .zIndexmyPic {
