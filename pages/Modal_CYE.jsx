@@ -5,6 +5,10 @@ const Modal_CYE = ({ open, onClose }) => {
             
   return (
     <div onClick={onClose} className='overlayExp'>
+      <script>
+         const body = document.querySelector("body");
+         body.style.overflow = "hidden";
+      </script>
       <div class="backgroundExp"></div>
       <div
         onClick={(e) => {
