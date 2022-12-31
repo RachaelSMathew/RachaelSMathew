@@ -118,12 +118,6 @@ export default function Header({ allPostsData }) {
                   <li><Voice/></li>
               </ul>
               </nav>
-              
-              <div className="topCornerIcons">
-            <a download="Rachael's Resume" href="/Rachael_Mathew_Resume_2022.pdf">
-                <img className="downloadIcon"/>
-            </a>
-            </div>
 
               <ThemeProvider theme={theme}>
                 <Typography variant="h5" align="center"><div className="mainFont" ><h1>Rachael Mathew is a <span
