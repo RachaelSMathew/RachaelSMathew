@@ -120,7 +120,7 @@ export default function Header({ allPostsData }) {
               </nav>
 
               <ThemeProvider theme={theme}>
-                <Typography variant="h5" align="center"><div className="mainFont" ><h1 style="padding-top: 20px;">Rachael Mathew is a <span
+                <Typography variant="h5" align="center"><div className="mainFont" ><h1>Rachael Mathew is a <span
                 id="text-rotate-id"
                 className="txt-rotate"
                  data-period="2000"
