@@ -302,7 +302,9 @@
 }
 
 /********************FOOTER***************************/
-
+.footer-content{
+  color:#551b8b;
+}
 .footer{
   z-index:.1;
   background-color: #eae1ce;
