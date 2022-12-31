@@ -304,12 +304,12 @@
 /********************FOOTER***************************/
 
 .footer{
-    z-index:.1;
-  background-color: rgb(129, 133, 137);
-   width: 100%;
-   position: fixed;
-     left: 0;
-     bottom: 0;
+  z-index:.1;
+  background-color: #eae1ce;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
      
 
 }
@@ -350,7 +350,7 @@
   border-radius: 130px;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
-  background: hsl(339,61%,89%);
+  background: #c774b2;
   z-index: -1;
   transition: transform .45s ease;
 }
