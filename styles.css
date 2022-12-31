@@ -347,12 +347,12 @@
   content: " ";
   display: block;
   position: absolute;
-  border-radius: 130px;
+  border-radius: 50px;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
   background: #c774b2;
   z-index: -1;
-  transition: transform .45s ease;
+  transition: transform .30s ease-out;
 }
 
 .mouse-out {
@@ -5113,7 +5113,9 @@ readers do not read off random characters that represent icons */
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-weight: 900; 
+  color: #551b8b;
+}
 
 
 
