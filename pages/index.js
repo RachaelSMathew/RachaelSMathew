@@ -9,6 +9,7 @@ function Home({ posts }) {
         return (
             <div className="container">
             <Head>
+                <meta name="google-site-verification" content="DCHe4u4X1fxv-aTU4NNvrOtoaZtSjoPrhFSp1zMuNx4" />
                 <title>Rachael M.</title>
                 <link rel="icon" href="./favicon.ico" />
             </Head>
