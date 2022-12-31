@@ -5,6 +5,7 @@ const Modal_CYE = ({ open, onClose }) => {
             
   return (
     <div onClick={onClose} className='overlayExp'>
+      <body style="overflow:hidden">
       <div class="backgroundExp"></div>
       <div
         onClick={(e) => {
@@ -22,6 +23,7 @@ const Modal_CYE = ({ open, onClose }) => {
           </div>
         </div>
       </div>
+      </body>
     </div>
   );
 };
