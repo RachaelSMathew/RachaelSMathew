@@ -4,7 +4,6 @@ const Modal_CYE = ({ open, onClose }) => {
     if (!open) return null;
             
   return (
-    <body style="overflow: hidden;">
     <div onClick={onClose} className='overlayExp'>
       <div class="backgroundExp"></div>
       <div
@@ -24,7 +23,6 @@ const Modal_CYE = ({ open, onClose }) => {
         </div>
       </div>
     </div>
-    </body>
   );
 };
 
