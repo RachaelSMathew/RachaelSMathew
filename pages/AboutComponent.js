@@ -1,7 +1,5 @@
 //
-//  Header.h
-//  
-//
+//  AboutComponent.js
 //  Created by Rachael Mathew on 12/25/21.
 //
 
