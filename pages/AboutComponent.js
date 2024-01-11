@@ -30,7 +30,7 @@ function About() {
             <div className="separator"></div>
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
-                aboutMe.innerHTML = "<span style='color: violet; font-family: Inconsolata,serif;'>public class</span> Rachael {<br>&emsp;<span style='color: violet; font-family: Inconsolata,serif;'>private int</span> year = 4;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] specialty = ['web development', 'mobile development'];<br>&emsp;<span style='color: violet; font-family: Inconsolata,serif;'>private boolean</span> madeWithReact&Love = true;<br>}"        `
+                aboutMe.innerHTML = "<span style='color: violet; font-family: Inconsolata,serif;'>public class</span> Rachael {<br>&emsp;<span style='color: violet; font-family: Inconsolata,serif;'>private Date</span> graduated = new Date("2023-12-15T03:24:00");<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] specialty = ['web development', 'mobile development'];<br>&emsp;<span style='color: violet; font-family: Inconsolata,serif;'>private boolean</span> madeWithReact&Love = true;<br>}"        `
             }}
             />
             
